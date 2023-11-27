@@ -1,13 +1,20 @@
 import React from 'react'
+import Image from "next/image";
 
 const Footer = () => {
     return (
-        <footer className='footer bordr border-t-[#33353F] border-t-transparent text-white'>
+        <footer className='footer border z-10 border-t-primary-600 border-l-transparent border-r-transparent text-white'>
             <div className='container p-12 flex justify-between' >
                 <span>
-                    Logo
+                    <Image
+                        src='/images/logo-image.png'
+                        alt='logo image'
+                        width={60}
+                        height={60}
+
+                    />
                 </span>
-                <p className='text-slate-600'>
+                <p className='text-primary-600'>
                     All rights reserved.
                 </p>
             </div>
@@ -15,4 +22,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer;

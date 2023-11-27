@@ -52,7 +52,7 @@ const AboutSection = () => {
     };
 
     return (
-        <section className='text-white'>
+        <section id='about' className='text-white'>
             <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
                 <Image
                     src="/images/about-image.png"
@@ -63,13 +63,17 @@ const AboutSection = () => {
                     <h2 className='text-4xl font-bold text-white mb-4'>
                         About Me
                     </h2>
-                    <p className='text-base lg:text-lg '>
-                        I am a full stack web developer with a passion for creating
-                        interactive and responsive web applications. I have experience
-                        working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-                        Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-                        looking to expand my knowledge and skill set. I am a team player and
-                        I am excited to work with others to create amazing applications.
+
+                    <p className='text-base lg:text-lg mb-3 text-justify'>
+                        I&apos;m a passionate, self-proclaimed designer who specializes in front-end development (React.js, Tailwind, Next.js). I am enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
+                    </p>
+
+                    <p className='text-base lg:text-lg mb-3 text-justify '>
+                        I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development.
+                    </p>
+
+                    <p className='text-base lg:text-lg text-justify '>
+                        One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉
                     </p>
 
                     <div className="flex flex-row justify-start mt-8">
@@ -105,7 +109,7 @@ const AboutSection = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 
